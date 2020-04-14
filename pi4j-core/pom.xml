@@ -184,6 +184,7 @@
                             com.pi4j.io.wdt.*
 						</Export-Package>
                         <Import-Package>!com.pi4j.*</Import-Package>
+						<_noee>true</_noee>
 					</instructions>
 				</configuration>
  				<executions>

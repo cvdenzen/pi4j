@@ -78,7 +78,7 @@ public class SerialImpl extends AbstractSerialDataReaderWriter implements Serial
      */
     public SerialImpl(){
         listeners = new CopyOnWriteArrayList<>();
-        executor = SerialFactory.getExecutorServiceFactory().newSingleThreadExecutorService();
+        executor = SerialFactory.getExecutorServiceFactory().getGpioEventExecutorService();
         receiveBuffer = new SerialByteBuffer();
 
         // register shutdown callback hook class
